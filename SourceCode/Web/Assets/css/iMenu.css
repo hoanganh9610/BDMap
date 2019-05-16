@@ -1,0 +1,123 @@
+﻿body {
+    font-family: "Lato", sans-serif;
+}
+
+.transaction {
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    border: none;
+    border-radius: 20px;
+    margin-right: 3px;
+}
+.headerMenu{
+    margin-left: 10px;
+    font-weight:bold;
+    font-size:13pt;
+    color: deeppink;
+    border-bottom: 1px solid deeppink;
+    padding: 5px;
+}
+.childTitle {
+    margin-top: 10px;
+}
+.parentContent{
+    margin-top:10px;
+}
+.iMenu {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222222 !important;
+    padding-top: 60px;
+}
+
+    .iMenu a {
+        border-bottom: 1px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #337ab7 !important;
+        display: block;
+    }
+
+        .iMenu a a {
+            border-bottom: 1px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white !important;
+            display: block;
+        }
+        .iMenu a i{
+            color:white;
+        }
+
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .iMenu {
+        padding-top: 15px;
+    }
+
+        .iMenu a {
+            font-size: 18px;
+        }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 3px solid #111;
+}
+   
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+        }
+}
